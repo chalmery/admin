@@ -1,3 +1,10 @@
 spring:
   application:
     name: admin-start
+  profiles:
+    active: test
+
+
+logging:
+  level:
+    root: info

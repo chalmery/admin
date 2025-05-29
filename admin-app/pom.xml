@@ -17,6 +17,13 @@
     </properties>
 
     <dependencies>
+        <!--模块间依赖-->
+        <dependency>
+            <groupId>io.github</groupId>
+            <artifactId>admin-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
 
     </dependencies>
 
