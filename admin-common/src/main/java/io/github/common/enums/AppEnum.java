@@ -1,4 +1,4 @@
-package top.yangcc.common.enums;
+package io.github.common.enums;
 
 
 @SuppressWarnings("unused")

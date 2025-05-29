@@ -1,4 +1,4 @@
-package top.yangcc.common.utils.constant;
+package io.github.common.utils.constant;
 
 public class CharConstant {
 

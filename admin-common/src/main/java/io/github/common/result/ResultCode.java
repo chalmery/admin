@@ -1,4 +1,4 @@
-package top.yangcc.common.result;
+package io.github.common.result;
 
 import lombok.Getter;
 
