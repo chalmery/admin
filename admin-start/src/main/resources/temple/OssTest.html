@@ -33,7 +33,7 @@
 
             const filename = file.name;
 
-            fetch("/api/oss/getPostSignatureForOssUpload", {method: "GET"})
+            fetch("http:/localhost:8080/api/oss/getPostSignatureForOssUpload", {method: "GET"})
                 .then((response) => {
                     if (!response.ok) {
                         throw new Error("获取签名失败");

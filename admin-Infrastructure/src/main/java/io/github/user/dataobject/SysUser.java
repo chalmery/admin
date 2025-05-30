@@ -1,4 +1,4 @@
-package io.github.infrastructure.user.dataobject;
+package io.github.user.dataobject;
 
 
 import com.baomidou.mybatisplus.annotation.IdType;

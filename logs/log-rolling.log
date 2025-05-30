@@ -1,0 +1,12 @@
+2025-05-30 20:57:42 [INFO ] main [] Starting StartApplication using Java 21.0.1 with PID 28612 (C:\Users\chaoc\Desktop\work\admin\admin-start\target\classes started by chaoc in C:\Users\chaoc\Desktop\work\admin)
+2025-05-30 20:57:42 [INFO ] main [] The following 1 profile is active: "test"
+2025-05-30 20:57:44 [INFO ] main [] Started StartApplication in 2.139 seconds (process running for 2.875)
+2025-05-30 20:58:22 [INFO ] main [] Starting StartApplication using Java 21.0.1 with PID 15184 (C:\Users\chaoc\Desktop\work\admin\admin-start\target\classes started by chaoc in C:\Users\chaoc\Desktop\work\admin)
+2025-05-30 20:58:22 [INFO ] main [] The following 1 profile is active: "test"
+2025-05-30 20:58:24 [INFO ] main [] Started StartApplication in 2.246 seconds (process running for 3.12)
+2025-05-30 21:03:31 [INFO ] main [] Starting StartApplication using Java 21.0.1 with PID 15304 (C:\Users\chaoc\Desktop\work\admin\admin-start\target\classes started by chaoc in C:\Users\chaoc\Desktop\work\admin)
+2025-05-30 21:03:31 [INFO ] main [] The following 1 profile is active: "test"
+2025-05-30 21:03:32 [INFO ] main [] Started StartApplication in 2.123 seconds (process running for 2.54)
+2025-05-30 21:03:39 [INFO ] http-nio-8080-exec-1 [6e094516-61bc-4c9e-ac2e-259ece824c63] getPostSignatureForOssUpload-start
+2025-05-30 21:03:40 [INFO ] http-nio-8080-exec-2 [4fcd1bf2-bedc-416e-a573-46b2c3ae4cfc] getPostSignatureForOssUpload-start
+2025-05-30 21:03:40 [INFO ] http-nio-8080-exec-3 [faff3686-f447-4fb8-a541-398bcc931ba3] getPostSignatureForOssUpload-start

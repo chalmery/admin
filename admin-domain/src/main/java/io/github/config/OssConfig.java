@@ -1,4 +1,4 @@
-package io.github.admindomain.config;
+package io.github.config;
 
 
 import org.springframework.context.annotation.Bean;

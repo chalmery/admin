@@ -1,4 +1,4 @@
-package io.github.infrastructure.utils;
+package io.github.utils;
 
 import java.time.Instant;
 import java.time.ZoneOffset;

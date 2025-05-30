@@ -1,4 +1,4 @@
-package io.github.start.filtter;
+package io.github.filtter;
 
 import jakarta.annotation.Resource;
 import org.springframework.context.annotation.Configuration;

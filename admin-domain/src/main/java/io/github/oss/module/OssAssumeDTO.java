@@ -1,4 +1,4 @@
-package io.github.admindomain.oss.module;
+package io.github.oss.module;
 
 import lombok.Data;
 

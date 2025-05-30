@@ -1,4 +1,4 @@
-package io.github.infrastructure.utils;
+package io.github.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

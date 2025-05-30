@@ -1,4 +1,4 @@
-package io.github.start.filtter;
+package io.github.filtter;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

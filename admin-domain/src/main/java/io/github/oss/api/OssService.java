@@ -1,6 +1,6 @@
-package io.github.admindomain.oss.api;
+package io.github.oss.api;
 
-import io.github.admindomain.oss.module.OssAssumeDTO;
+import io.github.oss.module.OssAssumeDTO;
 
 public interface OssService {
 

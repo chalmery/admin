@@ -1,9 +1,9 @@
-package io.github.adminapp.oss;
+package io.github.oss;
 
-import io.github.admindomain.oss.api.OssService;
-import io.github.admindomain.oss.module.OssAssumeDTO;
 import io.github.common.result.SimpleResult;
-import io.github.infrastructure.utils.JsonUtils;
+import io.github.oss.api.OssService;
+import io.github.oss.module.OssAssumeDTO;
+import io.github.utils.JsonUtils;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
