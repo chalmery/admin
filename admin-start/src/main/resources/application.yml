@@ -3,7 +3,18 @@ spring:
     name: admin-start
   profiles:
     active: test
+  datasource:
+    name: mysql
+    type: com.mysql.cj.jdbc.MysqlConnectionPoolDataSource
+    url: jdbc:mysql:// 192.168.1.15:3306/admin
+    username: root
+    password: root
 
+mybatis-plus:
+  mapper-locations: classpath*:/mybatis/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 logging:
   level:

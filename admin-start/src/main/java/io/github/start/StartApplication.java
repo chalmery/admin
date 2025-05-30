@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("io.github.infrastructure.mybaits")
+@MapperScan("io.github.infrastructure")
 public class StartApplication {
 
     public static void main(String[] args) {
