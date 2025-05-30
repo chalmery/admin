@@ -53,8 +53,8 @@ public class OssServiceImpl implements OssService {
             //获取临时凭证
             AssumeRoleRequest assumeRoleRequest = new AssumeRoleRequest()
                     // 必填，请确保代码运行环境设置了环境变量 OSS_STS_ROLE_ARN
-                    .setRoleArn(System.getenv("OSS_STS_ROLE_ARN"))
-                    .setRoleSessionName("yourRoleSessionName");// 自定义会话名称
+                    .setRoleArn(System.getenv("OSS_STS_ROLE_NAME"))
+                    .setRoleSessionName("oss-upload-session");// 自定义会话名称
             RuntimeOptions runtime = new RuntimeOptions();
 
             AssumeRoleResponse response = ossClient.assumeRoleWithOptions(assumeRoleRequest, runtime);
