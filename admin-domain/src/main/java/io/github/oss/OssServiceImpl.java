@@ -139,8 +139,7 @@ public class OssServiceImpl implements OssService {
             ossAssumeDTO.setSignature(signature);
             ossAssumeDTO.setSecurityToken(securitytoken);
             ossAssumeDTO.setDir(upload_dir);
-            //TODO 暂时不要回调地址了，本地测试
-            ossAssumeDTO.setHost(null);
+            ossAssumeDTO.setHost("http://web-admin-bucket.oss-cn-beijing.aliyuncs.com");
 
             return ossAssumeDTO;
 
