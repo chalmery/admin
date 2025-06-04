@@ -1,4 +1,4 @@
-package io.github.config;
+package io.github.oss.config;
 
 
 import org.springframework.context.annotation.Bean;
