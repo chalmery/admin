@@ -1,6 +1,6 @@
 package io.github.user;
 
-import io.github.common.result.SimpleResult;
+import io.github.result.SimpleResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,5 +19,6 @@ public class UserSsoController {
     public SimpleResult<?> refreshToken() {
 
 
+        return null;
     }
 }

@@ -1,8 +1,8 @@
 package io.github.oss;
 
-import io.github.common.result.SimpleResult;
 import io.github.oss.api.OssService;
 import io.github.oss.module.OssAssumeDTO;
+import io.github.result.SimpleResult;
 import io.github.utils.ExceptionUtils;
 import io.github.utils.JsonUtils;
 import jakarta.annotation.Resource;
