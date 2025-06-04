@@ -1,10 +1,10 @@
 package io.github.oss;
 
+import io.github.common.utils.ExceptionUtils;
+import io.github.common.utils.JsonUtils;
 import io.github.oss.api.OssService;
 import io.github.oss.module.OssAssumeDTO;
 import io.github.result.SimpleResult;
-import io.github.utils.ExceptionUtils;
-import io.github.utils.JsonUtils;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

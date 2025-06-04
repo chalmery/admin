@@ -1,4 +1,4 @@
-package io.github.utils;
+package io.github.common.utils;
 
 public class ExceptionUtils {
 

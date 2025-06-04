@@ -1,4 +1,4 @@
-package io.github.user.module;
+package io.github.sys.user.param;
 
 import lombok.Data;
 

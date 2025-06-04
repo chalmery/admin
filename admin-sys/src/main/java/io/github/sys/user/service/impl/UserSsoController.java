@@ -1,4 +1,4 @@
-package io.github.user;
+package io.github.sys.user.service.impl;
 
 import io.github.result.SimpleResult;
 import lombok.extern.slf4j.Slf4j;

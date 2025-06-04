@@ -1,15 +1,15 @@
-package io.github.user;
+package io.github.sys.user.service.impl;
 
-import io.github.user.api.SsoService;
-import io.github.user.module.LoginParam;
-import io.github.user.module.TokenDTO;
+import io.github.sys.user.param.LoginParam;
+import io.github.sys.user.result.TokenDTO;
+import io.github.sys.user.service.LoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 
 @Service
 @Slf4j
-public class SsoServiceImpl implements SsoService {
+public class LoginServiceImpl implements LoginService {
 
 
     @Override

@@ -1,4 +1,4 @@
-package io.github.exception;
+package io.github.common.exception;
 
 
 import lombok.Data;
