@@ -7,22 +7,31 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>admin-dev-api</artifactId>
+    <artifactId>admin-base-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>admin-dev-api</name>
-    <description>dev-api模块</description>
+    <name>admin-base-api</name>
+    <description>基础-api模块</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
 
+    <dependencies>
         <dependency>
-            <groupId>io.github</groupId>
-            <artifactId>admin-base-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
     </dependencies>
+
 </project>

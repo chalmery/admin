@@ -19,6 +19,7 @@
         <module>admin-sys-api</module>
         <module>admin-dev-api</module>
         <module>admin-auth-api</module>
+        <module>admin-base-api</module>
     </modules>
 
     <properties>
