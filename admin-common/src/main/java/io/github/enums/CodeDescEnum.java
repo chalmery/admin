@@ -1,4 +1,4 @@
-package io.github.common.enums;
+package io.github.enums;
 
 public interface CodeDescEnum {
 

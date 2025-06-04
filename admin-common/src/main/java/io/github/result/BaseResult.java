@@ -1,4 +1,4 @@
-package io.github.common.result;
+package io.github.result;
 
 import lombok.Data;
 import org.slf4j.MDC;

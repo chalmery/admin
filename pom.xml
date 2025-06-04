@@ -19,10 +19,18 @@
 
     <modules>
         <module>admin-common</module>
-        <module>admin-start</module>
+
+        <!-- 启动模块 -->
         <module>admin-app</module>
-        <module>admin-domain</module>
-        <module>admin-Infrastructure</module>
+
+        <!--  -->
+        <module>admin-dev</module>
+        <!--  -->
+        <module>admin-sys</module>
+
+        <module>admin-auth</module>
+
+        <module>admin-api</module>
     </modules>
 
     <properties>

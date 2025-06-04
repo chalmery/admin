@@ -1,4 +1,4 @@
-package io.github.common.constant;
+package io.github.constant;
 
 public class CharConstant {
 
