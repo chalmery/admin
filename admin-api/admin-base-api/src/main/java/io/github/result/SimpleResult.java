@@ -14,8 +14,8 @@ public class SimpleResult<T> extends BaseResult {
 
     public static <T> SimpleResult<T> buildSuccess(T data) {
         SimpleResult<T> result = new SimpleResult<>();
-        result.setCode(ResultCode.SUCCESS.getCode());
-        result.setMessage(ResultCode.SUCCESS.getMessage());
+        result.setCode(HttpStatus.HTTP_OK);
+        result.setMessage("请求成功");
         result.setSuccess(true);
         result.setData(data);
         return result;
@@ -23,16 +23,16 @@ public class SimpleResult<T> extends BaseResult {
 
     public static <T> SimpleResult<T> buildSuccess() {
         SimpleResult<T> result = new SimpleResult<>();
-        result.setCode(ResultCode.SUCCESS.getCode());
-        result.setMessage(ResultCode.SUCCESS.getMessage());
+        result.setCode(HttpStatus.HTTP_OK);
+        result.setMessage("请求成功");
         result.setSuccess(true);
         return result;
     }
 
     public static <T> SimpleResult<T> buildError() {
         SimpleResult<T> result = new SimpleResult<>();
-        result.setCode(ResultCode.ERROR.getCode());
-        result.setMessage(ResultCode.ERROR.getMessage());
+        result.setCode(HttpStatus.HTTP_INTERNAL_ERROR);
+        result.setMessage("服务端异常");
         result.setSuccess(false);
         return result;
     }
@@ -40,16 +40,17 @@ public class SimpleResult<T> extends BaseResult {
 
     public static <T> SimpleResult<T> buildError(String message) {
         SimpleResult<T> result = new SimpleResult<>();
-        result.setCode(ResultCode.ERROR.getCode());
+        result.setCode(HttpStatus.HTTP_INTERNAL_ERROR);
         result.setMessage(message);
         result.setSuccess(false);
         return result;
     }
 
-    public static <T> SimpleResult<T> buildError(ResultCode resultCode) {
+
+    public static <T> SimpleResult<T> buildError(Integer httpStatus, String message) {
         SimpleResult<T> result = new SimpleResult<>();
-        result.setCode(resultCode.getCode());
-        result.setMessage(resultCode.getMessage());
+        result.setCode(httpStatus);
+        result.setMessage(message);
         result.setSuccess(false);
         return result;
     }
