@@ -24,7 +24,7 @@ public class SysUser extends CommonDataObject {
     /**
      * 昵称
      */
-    private String nickName;
+    private String nickname;
 
     /**
      * 头像url

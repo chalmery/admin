@@ -23,8 +23,6 @@ public class LogInterceptor implements HandlerInterceptor {
         if (traceId == null) {
             traceId = UUID.randomUUID().toString();
         }
-
-        log.info("traceId {}", traceId);
         MDC.put(TRACE_ID, traceId);
         return true;
     }
