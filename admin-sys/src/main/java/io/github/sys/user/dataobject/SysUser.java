@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.github.common.dataobject.CommonDataObject;
+import io.github.sys.user.enums.UserStatusEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -33,7 +34,24 @@ public class SysUser extends CommonDataObject {
 
     /**
      * 状态
+     * @see UserStatusEnum
      */
     private Integer status;
+
+    /**
+     * 账号名称
+     */
+    private String userName;
+
+
+    /**
+     * 手机号
+     */
+    private String phoneNum;
+
+    /**
+     * 邮箱
+     */
+    private String email;
 
 }
