@@ -19,15 +19,12 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserMapper userMapper;
 
-//    @Resource
-//    private UserConverter userConverter;
-
-    private static final UserConverter userConverter = UserConverter.INSTANCE;
+    @Resource
+    private UserConverter userConverter;
 
 
     @Override
     public UserDTO getUserByUuid(String uuid) {
-
         LambdaQueryWrapper<SysUser> wrapper = new LambdaQueryWrapper<>(SysUser.class);
         wrapper.eq(SysUser::getArchive, ArchiveEnum.NO.getCode());
         wrapper.eq(SysUser::getUuid, uuid);
