@@ -21,4 +21,14 @@ public class CommonException extends RuntimeException {
         this.msg = SERVER_ERROR_MESSAGE;
     }
 
+    public CommonException(String msg) {
+        super(msg);
+        this.code = 500;
+        this.msg = msg;
+    }
+
+
+    public static CommonException getCommonResult(String exceptionMsg) {
+        return new CommonException(exceptionMsg);
+    }
 }

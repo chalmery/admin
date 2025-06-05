@@ -2,6 +2,7 @@ package io.github.filtter;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -10,6 +11,7 @@ import java.util.UUID;
 
 @Component
 @SuppressWarnings("unused")
+@Slf4j
 public class LogInterceptor implements HandlerInterceptor {
 
     private final String TRACE_ID = "traceId";
@@ -22,6 +24,7 @@ public class LogInterceptor implements HandlerInterceptor {
             traceId = UUID.randomUUID().toString();
         }
 
+        log.info("traceId {}", traceId);
         MDC.put(TRACE_ID, traceId);
         return true;
     }
