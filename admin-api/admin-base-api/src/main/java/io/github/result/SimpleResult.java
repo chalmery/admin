@@ -46,4 +46,12 @@ public class SimpleResult<T> extends BaseResult {
         return result;
     }
 
+    public static <T> SimpleResult<T> buildError(ResultCode resultCode) {
+        SimpleResult<T> result = new SimpleResult<>();
+        result.setCode(resultCode.getCode());
+        result.setMessage(resultCode.getMessage());
+        result.setSuccess(false);
+        return result;
+    }
+
 }

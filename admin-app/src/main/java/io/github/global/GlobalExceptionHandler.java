@@ -1,21 +1,32 @@
 package io.github.global;
 
 import cn.dev33.satoken.exception.NotLoginException;
+import io.github.result.ResultCode;
+import io.github.result.SimpleResult;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 
-@ControllerAdvice
+@RestControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
 
 
-    // 处理所有其他未处理的异常
+    /**
+     * 全局处理 未登录异常
+     */
     @ExceptionHandler(value = {NotLoginException.class})
-    public ResponseEntity<String> handleOtherExceptions(Exception ex) {
-        return new ResponseEntity<>("您当前未登录", HttpStatus.INTERNAL_SERVER_ERROR);
+    public SimpleResult<Void> handleNoLoginExceptions(NotLoginException ignoredEx) {
+        return SimpleResult.buildError(ResultCode.NO_LOGIN);
+    }
+
+
+    /**
+     * 全局处理 未登录异常
+     */
+    @ExceptionHandler(value = {Exception.class})
+    public SimpleResult<Void> handleOtherExceptions(Exception ignoredEx) {
+        return SimpleResult.buildError(ResultCode.ERROR);
     }
 }
