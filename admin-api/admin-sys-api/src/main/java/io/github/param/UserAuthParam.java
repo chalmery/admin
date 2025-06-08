@@ -24,5 +24,5 @@ public class UserAuthParam implements Serializable {
      *
      * @see IdentityTypeEnum
      */
-    private String identityType;
+    private Integer identityType;
 }

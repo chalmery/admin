@@ -40,7 +40,7 @@ public class UserApiImpl implements UserApi {
             return null;
         }
         if (StringUtils.isBlank(userAuthParam.getIdentifier()) || StringUtils.isBlank(userAuthParam.getCredential())
-                || StringUtils.isBlank(userAuthParam.getIdentityType())) {
+                || ObjectUtils.isEmpty(userAuthParam.getIdentityType())) {
             return null;
         }
         LambdaQueryWrapper<SysUserAuth> wrapper = new LambdaQueryWrapper<>(SysUserAuth.class);

@@ -30,6 +30,12 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>io.github</groupId>
+            <artifactId>admin-sys-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!-- Sa-Token 权限认证，在线文档：https://sa-token.cc -->
         <dependency>
             <groupId>cn.dev33</groupId>

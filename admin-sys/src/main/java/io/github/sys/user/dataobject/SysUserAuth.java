@@ -31,7 +31,7 @@ public class SysUserAuth extends CommonDataObject {
      *
      * @see io.github.enums.IdentityTypeEnum
      */
-    private String identityType;
+    private Integer identityType;
 
     /**
      * 是否验明，0未验证，1已验证
