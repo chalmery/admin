@@ -1,4 +1,4 @@
-package io.github.sys.user.controller;
+package io.github.auth.controller;
 
 
 import io.github.result.SimpleResult;

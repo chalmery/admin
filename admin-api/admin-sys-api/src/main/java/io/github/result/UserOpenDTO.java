@@ -1,4 +1,4 @@
-package io.github.sys.user.result;
+package io.github.result;
 
 
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class UserDTO implements Serializable {
+public class UserOpenDTO implements Serializable {
 
     /**
      * 客户信息唯一标识
