@@ -9,7 +9,25 @@ spring:
     url: jdbc:mysql:// 192.168.1.15:3306/admin
     username: root
     password: root
-
+  data:
+    redis:
+      host: 192.168.1.15
+      port: 6379
+      password: redis
+      # 连接超时时间,单位ms
+      connect-timeout: 50000
+      # 选择第几个数据库，默认为0,最大值15
+      database: 0
+      lettuce:
+        pool:
+          # 最大的活跃连接数，不会超过这个数，根据项目预期并发量调整
+          max-active: 50
+          # max-idle 指定了连接池中的最大空闲连接数。
+          max-idle: 30
+          #这个配置指定了连接池中的最小空闲连接数。
+          min-idle: 10
+          # 当连接池达到最大活跃连接数时，客户端等待可用连接的最大时间（以毫秒为单位）。-1 表示无限等待
+          max-wait: -1
 server:
   port: 8080
 
